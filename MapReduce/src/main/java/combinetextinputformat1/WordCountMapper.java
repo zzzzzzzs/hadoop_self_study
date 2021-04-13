@@ -1,4 +1,4 @@
-package combietextinputformat2;
+package combinetextinputformat1;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
