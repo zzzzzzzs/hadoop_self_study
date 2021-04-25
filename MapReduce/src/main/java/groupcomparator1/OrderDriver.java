@@ -1,6 +1,5 @@
 package groupcomparator1;
 
-import com.atguigu.groupcomparator2.OrderGroupingComparator;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.NullWritable;

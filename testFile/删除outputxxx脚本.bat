@@ -1,0 +1,1 @@
+for /d %%i in (output*) do rd  %%i /s/q

@@ -18,7 +18,7 @@ public class MapJoinDriver {
         Job job  = Job.getInstance(conf);
         //在driver中设置缓存数据,这么写更加灵活，可以通过main方法的参数动态传值。
         //可设置多个缓存文件
-        job.addCacheFile(new URI("file:///D:/Data/atguigu0317/bigdata/008_Hadoop/HadoopSummary/IdeaHadoopLearnSrc/testFile/inputcache/pd.txt"));
+        job.addCacheFile(new URI("./testFile/inputcache/pd.txt"));
         // job.addCacheFile(new URI("file://"+args[0]));
         job.setJarByClass(MapJoinDriver.class);
         job.setMapperClass(MapJoinMapper.class);
@@ -30,7 +30,7 @@ public class MapJoinDriver {
         job.setOutputValueClass(NullWritable.class);
 
         //设置Reduce的个数为0。不需要reduce的情况下就设置为0，如果不设置的话默认是1。
-        //没用reduce的情况下，就没用shuffle的过程，这样的话就节约了资源。
+        //没有reduce的情况下，就没有shuffle的过程，这样的话就节约了资源。
         job.setNumReduceTasks(0);
 
         FileInputFormat.setInputPaths(job,new Path("./testFile/inputtable2"));
