@@ -13,6 +13,7 @@ buildNumber.properties
 **/mvnw
 **/mvnw.cmd
 
+**/*.iml
 **/.mvn
 **/target/
 
@@ -20,5 +21,6 @@ buildNumber.properties
 .idea
 
 **/.gitignore
+**/output*
 
 
